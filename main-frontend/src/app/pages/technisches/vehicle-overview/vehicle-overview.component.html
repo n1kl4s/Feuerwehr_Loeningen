@@ -1,0 +1,53 @@
+<!-- Fahrzeugübersicht -->
+<section class="" id="fahrzeuge">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="section-title text-center">Unsere Fahrzeuge</h1>
+        <div class="section-title-border margin-t-20 mb-5"></div>
+      </div>
+    </div>
+    <div class="row mb-5" *ngFor="let vehicle of vehicles; let i = index">
+
+      <div class="col-xl-4  col-lg-5 col-md-6 col-sm-12 order-sm-1" [ngClass]="{'order-md-1': i % 2 === 0,'order-md-12': i % 2 !== 0}">
+        <img src="/assets/images/Vehicles/{{vehicle.engineId}}_thumbnail.jpg" class="img-fluid">
+      </div>
+
+      <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12 order-sm-1 table-responsive" [ngClass]="{'order-md-12': i % 2 === 0,'order-md-1': i % 2 !== 0}">
+        <table class="table table-sm table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col" colspan="2" class="dobr">{{vehicle.classification.classificationType}} {{vehicle.engineNumber}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fahrzeugart</td>
+              <td>{{vehicle.classification.classificationArt}}</td>
+            </tr>
+            <tr>
+              <td>Funkruf</td>
+              <td>{{vehicle.engineRadioCall}}</td>
+            </tr>
+            <tr>
+              <td>Kennzeichen</td>
+              <td>{{vehicle.engineLicensePlate}}</td>
+            </tr>
+            <tr>
+              <td>PS</td>
+              <td>{{vehicle.enginePs}}</td>
+            </tr>
+            <tr>
+              <td>Besatzung</td>
+              <td>{{vehicle.crew.crewValue}}</td>
+            </tr>
+            <tr>
+              <td>Baujahr</td>
+              <td>{{vehicle.engineConstructionYear}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

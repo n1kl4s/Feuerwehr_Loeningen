@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top" (scroll)="onWindowScroll($event);">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/">
+            <div>
+                <div>
+                    <img src="assets/images/Logo/FW_Loeningen_Logo.svg" class="img-responsive">
+                </div>
+            </div>
+        </a>
+        <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed"
+            data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" ngbDropdown>
+                    <a class="nav-link" routerLink="/">Start</a>
+                </li>
+
+
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link dropdown-toggle" id="die_feuerwehr" ngbDropdownToggle>Die Feuerwehr</a>
+                    <div class="dropdown-menu" aria-labelledby="die_feuerwehr" ngbDropdownMenu>
+                        <a class="dropdown-item" routerLink="/about/senioren" [ngx-scroll-to]="'#senioren'">Senioren</a>
+                        <a class="dropdown-item" routerLink="/about/jugend" [ngx-scroll-to]="'#jugend'">Jugendfeuerwehr</a>
+                        <a class="dropdown-item" routerLink="/about/mannschaft">Die Mannschaft</a>
+                        <a class="dropdown-item" routerLink="/about/kommando">Das Kommando</a>
+                        <hr>
+                        <a class="dropdown-item" routerLink="/technik/fahrzeuge">Fahrzeuge</a>
+                    </div>
+                </li>
+
+                <li class="nav-item" ngbDropdown>
+                    <a class="nav-link" routerLink="/foerderverein">Förderverein</a>
+                </li>
+
+                <li class="nav-item" ngbDropdown>
+                    <a class="nav-link" routerLink="/einsatze">Einsätze</a>
+                </li>
+
+
+                <li class="nav-item" ngbDropdown>
+                    <a class="nav-link" routerLink="/kontakt">Kontakt</a>
+                </li>
+
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link dropdown-toggle" id="buergerinfo" ngbDropdownToggle>Bürgerinformation</a>
+                    <div class="dropdown-menu" aria-labelledby="buergerinfo" ngbDropdownMenu>
+                        <a class="dropdown-item" routerLink="/info/buerger/notfall">Notfall! - Was tun?</a>
+                        <a class="dropdown-item" routerLink="/info/buerger/rauchmelder">Rauchmelder</a>
+                        <a class="dropdown-item" routerLink="/info/buerger/rettungskarte">ADAC Rettungskarte</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

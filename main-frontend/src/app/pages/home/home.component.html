@@ -1,0 +1,204 @@
+<section class="section bg-home height-100vh " id="home">
+    <particles [width]="width" [height]="height" [style]="myStyle" [params]="myParams"></particles>
+
+    <div class="">
+        <div class="">
+            <div class="container slidero">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-10  col-sm-12 text-white text-center bg-text-overlay px-0">
+                        <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true" interval="5000"
+                            [keyboard]="true" [pauseOnHover]="true" [wrap]="true" class="pb-5 px-5 slick-slide" >
+                            <ng-template ngbSlide>
+                                <app-banner></app-banner>
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <app-werbung-foerderverein></app-werbung-foerderverein>
+                            </ng-template>
+                            <!--
+                            <ng-template ngbSlide>
+                                <app-letzter-einsatz></app-letzter-einsatz>
+                            </ng-template>
+                            -->
+                        </ngb-carousel>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="section-title text-center">Herzlich Willkommen bei der Feuerwehr Löningen</h1>
+                <div class="section-title-border margin-t-20 mb-5"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>
+                    Wir möchten uns auf den folgenden Seiten vorstellen und gleichzeitig über unsere mehr als 130
+                    jährige Geschichte, die Arbeit innerhalb des Einsatzgebietes der Stadt Löningen, und deren Gemeinde
+                    oder Kreisgrenzen hinaus informieren.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    Die Feuerwehr Löningen ist als sogenannte &quot;Schwerpunktfeuerwehr&quot; eingestuft.
+                    Für diese höchste Einstufung bei freiwilligen Feuerwehren sind besonders die
+                    Einwohnerzahl, der Umfang an Industrie und die Fläche des Einsatzgebietes
+                    maßgebend.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    Da es in der Stadtgemeinde Löningen nur eine Feuerwehr gibt, ist diese für die gesamte
+                    Einwohnerzahl von derzeit ca. 14500 Bürgern und eine Gesamtfäche von 143
+                    Quadratkilometern zuständig.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    Aber auch über die Kreis- und Stadtgrenzen hinaus sind wir aktiv und leisten so bei
+                    Bedarf jederzeit nachbarschaftliche Löschhilfe.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h3 class="section-title text-center">Leg einfach los</h3>
+                <div class="section-title-border margin-t-20 mb-5"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-xs-12">
+                <a class="text-dark" routerLink="/technik/fahrzeuge">
+                    <div class="team-box text-center">
+                        <div class="team-wrapper">
+                            <div class="team-member">
+                                <img alt="" src="assets/images/zuDenFahrzeugen.jpg" class=" oval">
+                            </div>
+                        </div>
+                        <h4 class="team-name">Zu den Fahrzeugen</h4>
+                        <p class="text-uppercase team-designation">Die Ausrüstung mit der wir arbeiten</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <a class="text-dark" routerLink="/einsatze">
+                    <div class="team-box text-center">
+                        <div class="team-wrapper">
+                            <div class="team-member">
+                                <img alt="" src="assets/images/zuDenEinsaetzen.jpg" class=" oval">
+                            </div>
+                        </div>
+                        <h4 class="team-name">Einsatzstatistik</h4>
+                        <p class="text-uppercase team-designation">Unsere letzten Einsätze</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <a class="text-dark" routerLink="/about/mannschaft">
+                    <div class="team-box text-center">
+                        <div class="team-wrapper">
+                            <div class="team-member">
+                                <img alt="" src="assets/images/zuDerMannschaft.jpg" class=" oval">
+                            </div>
+                        </div>
+                        <h4 class="team-name">Die Mannschaft</h4>
+                        <p class="text-uppercase team-designation">Wir! Gemeinsam! Ein Team!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" id="geschichte">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="section-title text-center">Unsere Geschichte</h3>
+                <div class="section-title-border margin-t-20 mb-5"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>
+                    <span class="font-weight-bold text-primary">
+                        Die Geschichte des Feuerlöschwesens in Löningen beginnt vor rund 500 Jahren mit einem
+                        Paukenschlag: Ein riesiger Brand vernichtet den Ort restlos.</span>
+                    <br>
+                    Damit dem Ort Löningen, welcher schon damals eine große Bedeutung im "Hasegau" hatte, eine solche
+                    Katastrophe nie wieder passieren sollte, begannen ehrhafte und tapfere Männer damit, einen
+                    Brandschutz für Löningen aufzubauen.
+                    <br>
+                    Über Jahrhunderte entwickelte sich dann das Feuerlöschwesen innerhalb Löningens immer weiter. Zwar
+                    waren die Mittel um einen Brand zu bekämpfen damals eher dürftig, dennoch wurde mit Wassereimern,
+                    Feuerhaken und Feuerpatschen so manchem Feuer der Gar ausgemacht.
+                    <br>
+                    Nachdem in den Jahren 1850 und 1875 zwei große Feuerbrünsten wieder fast den ganzen Ort vernichten,
+                    wurde im Jahr 1882 dann die freiwillige Feuerwehr in Löningen gegründet.
+                </p>
+                <p>
+                    Heute sind Feuerhaken und Löscheimer nur noch in Museen zu finden, und auch Handdruckspritzen, die
+                    von
+                    Pferden gezogen wurden, gehören der Vergangenheit an.
+                    <br>
+                    Die modernen Lösch- und Hilfeleistungsfahrzeuge und die Ausrüstung der heutigen Feuerwehr Löningen
+                    sind
+                    in dem 1955 errichtetem, und 1976 erweitertem Feuerwehrgerätehaus an der Lindenallee untergebracht.
+                    Auch
+                    die 2005 gegründete Jugendfeuerwehr Löningen hat ihr Domizil bezogen.
+                    <br>
+                    Seit 2015 bekleidet Mario Radtke das Amt des Stadtbrandmeisters in Löningen. Sein Stellvertreter ist
+                    Hartmut
+                    Schwarte.
+                    <a routerLink="/about/kommando" class="read-btn">(mehr über das Kommando erfahren <i
+                            class="mdi mdi-arrow-right"></i>)</a>
+                    <br>
+                    Die Leitung der Jugendfeuerwehr obliegt Jugendwart Henning Ahrens und seinem Stellvertreter Holger
+                    Dopp.
+                    Beide werden von einem Betreuerteam bei ihren umfangreichen Aufgaben im Bereich der Jugendarbeit
+                    tatkräftig
+                    unterstützt.
+                    <br>
+                    Das Einsatzgebiet der Feuerwehr Löningen umfasst rund 14.000 Einwohner auf 143 qkm. Zudem leisten
+                    wir
+                    auch
+                    über die Stadt- und Kreisgrenzen hinaus Löschhilfe.
+                    <br>
+                    Mit der Planung eines <a routerLink="/news/neubau" class="read-btn">neuen Feuerwehrhauses (<i
+                            class="mdi mdi-arrow-right"></i>)</a>, dem Inkrafttreten eines Bedarfsplans für die
+                    Feuerwehr
+                    und
+                    der Gründung des Fördervereins sieht die Feuerwehr Löningen positiv in die Zukunft des Brandschutzes
+                    in
+                    Löningen.
+                    <br>
+                    Unter dem Leitspruch "Gott zur Ehr', dem Nächsten zur Wehr" verrichten heute über 60 Kameradinnen
+                    und
+                    Kameraden ihren freiwilligen Dienst für den Brandschutz und die Hilfeleistungen in und um Löningen.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
