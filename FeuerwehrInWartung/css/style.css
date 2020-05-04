@@ -1,0 +1,13 @@
+html,
+body {
+    height: 100%;
+}
+
+body{
+    background-color: #666666;
+}
+
+h3{
+    color: maroon;
+    text-align: center;
+}
