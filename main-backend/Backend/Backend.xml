@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Backend</name>
+    </assembly>
+    <members>
+        <member name="M:Backend.Controllers.ClassificationsController.GetClassification">
+            <summary>
+            Get all Classifications
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                GET /Classifications
+            </remarks>
+            <returns>All Classification</returns>
+            <response code="200">Returns all classifications</response>
+        </member>
+        <member name="M:Backend.Controllers.ClassificationsController.GetClassification(System.Int32)">
+            <summary>
+            Get a specific Classification
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                GET /Classifications/5
+            </remarks>
+            <param name="id">Classification ID</param>
+            <returns>Specific Classification</returns>
+            <response code="200">Returns specific Classification</response>
+        </member>
+        <member name="M:Backend.Controllers.ClassificationsController.PutClassification(System.Int32,Backend.Entities.Classification)">
+            <summary>
+            Updates a specific Classification
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                PUT /Classifications/5
+                {
+                    
+                }
+            </remarks>
+            <param name="id">Classification ID</param>
+            <param name="classification">Classification values</param>
+            <response code="204">No content, the classification was updated successfully</response>
+            <response code="404">If the given classification doesn' excist.</response>
+            <response code="400">If the given classification ID is invalid.</response>
+        </member>
+        <member name="M:Backend.Controllers.ClassificationsController.PostClassification(Backend.Entities.Classification)">
+            <summary>
+            Creates a new Classification
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                Post /Classifications/Add
+                {
+                    
+                }
+            </remarks>
+            <returns>Newly created Classification</returns>
+            <response code="201">Returns the newly created Classification</response>
+            <response code="409">If a parameter Conflict occurrs</response>
+        </member>
+        <member name="M:Backend.Controllers.ClassificationsController.DeleteClassification(System.Int32)">
+            <summary>
+            Deletes a specific Classification
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                DELETE /Classifications/5
+            </remarks>
+            <param name="id">Classification ID</param>
+            <response code="200">Classification, which was deleted successfully</response>
+            <response code="404">If the Classification was not found</response>
+        </member>
+        <member name="M:Backend.Controllers.ClientsController.GetClient">
+            <summary>
+            Get all Clients
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                GET /Clients
+            </remarks>
+            <returns>All Clients</returns>
+            <response code="200">Returns all users</response>
+        </member>
+        <member name="M:Backend.Controllers.ClientsController.GetClient(System.Int32)">
+            <summary>
+            Get a specific Clients
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                GET /Clients/5
+            </remarks>
+            <param name="id">Clients ID</param>
+            <returns>Specific Clients Clients</returns>
+            <response code="200">Returns specific users</response>
+            <response code="404">If the given user doesn' excist.</response>
+        </member>
+        <member name="M:Backend.Controllers.ClientsController.PutClient(System.Int32,Backend.Entities.Client)">
+            <summary>
+            Updates a specific Clients
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                PUT /Clients/5
+                {
+                    "userName": "New ClientName",
+                    "userPrename": "New Prename",
+                    "userSurname": "New Surname",
+                    "userPasswordHash": "New Password",
+                    "userPasswordSalt": "New Password Hash",
+                    "positionId": "New position assignment",
+                    "roleId": "New Role assignment"
+                }
+            </remarks>
+            <param name="id">Clients ID</param>
+            <param name="client">Clients to Update</param>
+            <response code="204">No content, the user was updated successfully</response>
+            <response code="404">If the given user doesn' excist.</response>
+            <response code="400">If the given user ID is invalid.</response>
+        </member>
+        <member name="M:Backend.Controllers.ClientsController.DeleteClient(System.Int32)">
+            <summary>
+            Deletes a specific Clients
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                DELETE /Clients/5
+            </remarks>
+            <param name="id">Clients ID</param>
+            <response code="200">Clients, which was deleted successfully</response>
+            <response code="404">If the Clients was not found</response>
+        </member>
+        <member name="M:Backend.Controllers.CrewsController.GetCrew">
+            <summary>
+            Get all Crews
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                GET /Crews
+            </remarks>
+            <returns>All Crews</returns>
+            <response code="200">Returns all crew</response>
+        </member>
+        <member name="M:Backend.Controllers.CrewsController.GetCrew(System.Int32)">
+            <summary>
+            Get a specific Crew
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                GET /Crews/5
+            </remarks>
+            <param name="id">Crew ID</param>
+            <returns>Specific Crew</returns>
+            <response code="200">Returns specific Crew</response>
+        </member>
+        <member name="M:Backend.Controllers.CrewsController.PutCrew(System.Int32,Backend.Entities.Crew)">
+            <summary>
+            Updates a specific Crew
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                PUT /Crews/5
+                {
+                    
+                }
+            </remarks>
+            <param name="id">Crew ID</param>
+            <param name="classification">Crew values</param>
+            <response code="204">No content, the crew was updated successfully</response>
+            <response code="404">If the given crew doesn' excist.</response>
+            <response code="400">If the given crew ID is invalid.</response>
+        </member>
+        <member name="M:Backend.Controllers.CrewsController.PostCrew(Backend.Entities.Crew)">
+            <summary>
+            Creates a new Crew
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                Post /Crews/Add
+                {
+                    
+                }
+            </remarks>
+            <returns>Newly created Crew</returns>
+            <response code="201">Returns the newly created Crew</response>
+            <response code="409">If a parameter Conflict occurrs</response>
+        </member>
+        <member name="M:Backend.Controllers.CrewsController.DeleteCrew(System.Int32)">
+            <summary>
+            Deletes a specific Crew
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                DELETE /Crews/5
+            </remarks>
+            <param name="id">Crew ID</param>
+            <response code="200">Crew, which was deleted successfully</response>
+            <response code="404">If the Crew was not found</response>
+        </member>
+        <member name="M:Backend.Controllers.EnginesController.GetEngine">
+            <summary>
+            Get all Engines
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                GET /Engines
+            </remarks>
+            <returns>All Engines</returns>
+            <response code="200">Returns all Engines</response>
+        </member>
+        <member name="M:Backend.Controllers.EnginesController.GetEngine(System.Int32)">
+            <summary>
+            Get a specific Engines
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                GET /Engines/5
+            </remarks>
+            <param name="id">Engines ID</param>
+            <returns>Specific Engines</returns>
+            <response code="200">Returns specific Engines</response>
+        </member>
+        <member name="M:Backend.Controllers.EnginesController.PutEngine(System.Int32,Backend.Entities.Engine)">
+            <summary>
+            Updates a specific Engines
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                PUT /Engines/5
+                {
+                    
+                }
+            </remarks>
+            <param name="id">Engines ID</param>
+            <param name="classification">Engines values</param>
+            <response code="204">No content, the Engines was updated successfully</response>
+            <response code="404">If the given Engines doesn' excist.</response>
+            <response code="400">If the given Engines ID is invalid.</response>
+        </member>
+        <member name="M:Backend.Controllers.EnginesController.PostEngine(Backend.Entities.Engine)">
+            <summary>
+            Creates a new Engines
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                Post /Engines/Add
+                {
+                    
+                }
+            </remarks>
+            <returns>Newly created Engines</returns>
+            <response code="201">Returns the newly created Engines</response>
+            <response code="409">If a parameter Conflict occurrs</response>
+        </member>
+        <member name="M:Backend.Controllers.EnginesController.DeleteEngine(System.Int32)">
+            <summary>
+            Deletes a specific Engines
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                DELETE /Engines/5
+            </remarks>
+            <param name="id">Engines ID</param>
+            <response code="200">Engines, which was deleted successfully</response>
+            <response code="404">If the Engines was not found</response>
+        </member>
+        <member name="T:Backend.Enum.Position">
+            <summary>
+            Positionen in der Feuerwehr
+            </summary>
+        </member>
+        <member name="T:Backend.Enum.Role">
+            <summary>
+            Die Rollenverteilung im System
+            </summary>
+        </member>
+        <member name="F:Backend.Enum.Role.God">
+            <summary>
+            Godmode, dieser benutzer hat keinerlei Einschrenkungen
+            </summary>
+        </member>
+        <member name="F:Backend.Enum.Role.Admin">
+            <summary>
+            Admin: Darf einsätze und Fahrzeuge Pflegen, sowie Mitarbeiter hinzufügen
+            </summary>
+        </member>
+        <member name="F:Backend.Enum.Role.Member">
+            <summary>
+            Benutzer, darf in geschützte Bereiche eintreten
+            </summary>
+        </member>
+        <member name="F:Backend.Enum.Role.Guest">
+            <summary>
+            Gast darf öffentliche Bereiche einsehen
+            </summary>
+        </member>
+    </members>
+</doc>
